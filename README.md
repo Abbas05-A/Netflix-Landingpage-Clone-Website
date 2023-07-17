@@ -1,3 +1,5 @@
+Netflix Landing Page Clone made using basic HTML, CSS and JAVASCRIPT. I have also made it responsive to work on various devices. By creating this landing Page. I have gained a strong understanding of what Landing Page is and how I can build, deploy and publish it to web.
+
 For Live Demo Visit the live portfolio website 👉 https://netflix-landingpage-clone-website.netlify.app
 
 Screenshots:-
