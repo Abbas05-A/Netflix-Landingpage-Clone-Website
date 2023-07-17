@@ -1,0 +1,876 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header{
+    background-image: url("Images/BG.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 95vh;
+    display: block;
+}
+.container {
+    height: 100%;
+    width: auto;
+    background-color: rgba(0,0,0,0.3); 
+    box-shadow: inset 0px 150px 500px rgb(10, 10, 10), inset 0px -100px 200px rgb(10, 10, 10);
+}
+
+#logo {
+    width: 148px;
+    position: relative;
+    top: 2px;
+    left: 138px;
+}
+.select {
+    background-color: rgba(22, 22, 22, 0.7);
+    padding: 5px 38px;
+    appearance: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+.globe {
+    position: absolute;
+    top: 6.5px;
+    left: 8px;
+    }
+.droparrow {
+    position: absolute;
+    top: 8px;
+    left: 95px;
+}
+.dropdown { 
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown span {
+    font-size: 20px;
+}
+.nav {
+    height: 86px;
+    margin: 0px 36px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.rightside {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    position: relative;
+    right: 140px;
+}
+.button {
+    background-color: red;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    padding: 4px 16px;
+    border: none;
+}
+.button a {
+    text-decoration: none;
+}
+.content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 178px;
+    text-align: center;
+}
+.content h1,p {
+    margin-top: 15px;
+}
+.content h1 {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+}
+.content p {
+    font-size: 24px;
+    font-weight: normal;
+}
+.email-content {
+    display: block;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0px 70px;
+}
+.email-content p {
+    font-size: 20px;
+    text-align: center;
+}
+.email {
+    width:max-content;
+    margin: 0px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.email-field {
+    display: block;
+    width: 370px;
+    font-size: 16px;
+    background-color: rgba(22, 22, 22, 0.7);
+    border-style: none;
+    border: 0.8px solid rgba(128, 128, 128, 0.7); ;
+    border-radius: 3px;
+    padding: 24px 16px 8px;
+    outline-offset: 2px;
+}
+.email-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 18px;
+    left: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: bottom 0.25s;
+    /* transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1); */
+}
+.email-error {
+    position: absolute;
+    top: 110%;
+    left: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: red;
+    border-radius: 3px;
+    border-style: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+.btn > span {
+    font-size: 35px;
+    position: relative;
+    top: 2px;
+}
+.material-symbols-outlined {
+    position: absolute;
+    top: 68px;
+    left: 0px;
+    color: red;
+}
+#cancelsym {
+    font-size:16px;
+    font-weight: 600;
+}
+.body-section {
+    display: flex;
+    padding: 70px 0PX;
+    justify-content: space-around;
+}
+.content1 {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.right {
+    display: block;
+    position: relative;
+   
+}
+.left h1  {
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.left {
+    width: 600px;
+}
+.left p{
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    font-size: 24px;
+}
+.right img {
+    width: 580px;
+    display: block;
+    max-width: 100%;
+
+} 
+.right video {
+    position: absolute;
+    width: 430px;
+    left: 12%;
+    top: 20%; 
+    z-index: -1;
+    max-width: 80%;
+}
+.header, .body-section, .body-section1, .faq-container{
+    border-bottom: 8px solid rgb(39, 38, 38);
+}
+
+.body-section1 {
+    display: flex;
+    padding: 20px 0PX;
+    justify-content: space-around;
+}
+.content2 {
+    display: flex;
+    align-items: center;
+}
+.strangerthings {
+    position: relative;
+    left: -5px;
+    top: 40px;
+}
+.strangerthings img {
+    width: 580px;
+    max-width: 100%;
+}
+.downloading {
+    display: flex;
+    background-color: black;
+    border: 1.6px solid rgba(255, 255, 255, 0.2);;
+    width: 310px;
+    margin: auto;
+    padding: 10px 12px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 130px;
+    align-items: center;
+    gap: 15px;
+    max-width: 100%;
+    box-shadow: black 0.5px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+.downloading p {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.downloading small {
+    font-size: 14px;
+    font-weight: 500;
+    width: 48px;
+    color: rgb(0, 113, 235);
+}
+.downloading img {
+    width: 50px;
+    height: 72px;
+}
+.download {
+    width: 600px;
+}
+.download h1 {
+    position: relative;
+    left: 8px;
+    bottom: 13px;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.download p {
+    position: relative;
+    left: 8px;
+    bottom: 13px;
+    font-size: 24px;
+}
+#gif {
+    height: 50px;
+    width: 48px;
+    position: absolute;
+    right: 10px;
+}
+
+.content3 {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.apple {
+    display: block;
+    position: relative;
+    right: 7px;
+    bottom: 5px;
+    padding-bottom: 5px;
+}
+.apple img {
+    width: 575px;
+    display: block;
+    max-width: 100%;
+}
+.where {
+    width: 600px;
+    padding-left: 30px;
+
+}
+.where h1  {
+    position: relative;
+    left: 7px;
+    bottom: 17px;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.where p{
+    position: relative;
+    left: 7px;
+    bottom: 17px;
+    font-size: 24px;
+}
+.apple video {
+    width: 400px;
+    position: absolute;
+    top: 40px;
+    right: 20%;
+    z-index: -1;
+    max-width: 63%;
+}
+
+.content4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.children img {
+    width: 575px;
+    position: relative;
+    right: 22px;
+    max-width: 100%;
+}
+.kids {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    width: 600px;
+}
+.kids h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.kids p {
+    font-size: 24px;
+}
+
+.content5 {
+    padding: 70px 180px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.content5 h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.content5 ul {
+    margin: 0px auto;
+}
+.content5 ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.question p {
+    margin: 0px;
+    font-size: 24px;
+}
+.question span {
+    font-size: 40px;
+}
+.question {
+    background-color: rgb(45, 45, 45);
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 18px 24px;
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    align-items:center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.question .close-btn {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 0.15s;
+} 
+.answer {
+    overflow:  hidden;
+    background-color: rgb(45, 45, 45);
+    max-height: 0;
+    transition-duration: 0.25s;
+    transition-delay: 0.1s;
+}
+.answer p {
+    margin-top: 0px;
+    padding: 1.2rem;
+    display: inline-block;
+}
+.question.open + .answer {
+    max-height: 1200px;
+}
+.question.open > .close-btn {
+    transform: rotate(45deg);
+}
+.question:hover {
+    background-color: rgb(75, 75, 75);
+    transition-duration: 0.5s;
+}
+.content6 {
+    padding: 50px 0px;
+    padding-left: 170px;
+    width: 100%;
+}
+.questions p {
+    font-size: 16px;
+    color:  rgb(189, 189, 189);
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.questions p>a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+.footer-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+.footer-list li {
+    display: inline-block;
+    width: 29%;
+    margin-bottom: 11px;
+}
+.footer-list a {
+    color: rgb(189, 189, 189);
+    font-weight: 500;
+    font-size: 14px;
+}
+.content6 > p {
+    color: rgb(189, 189, 189);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 25px 0px 15px;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav {
+        height: 86px;
+        margin: 0px 36px;
+        display:flex;
+        justify-content: space-between;
+        position: none;
+    }
+    #logo {
+        width: 148px;
+        position: relative;
+        left: 0px;
+    }
+    .rightside {
+        position: relative;
+        right: 0px;
+    }
+    .content5 {
+        padding: 50px 30px 20px;
+    }
+    .content6 {
+        padding: 60px 0px;
+        padding-left: 32px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+    }
+    .container {
+        height: 100%;
+        width: auto;
+        box-shadow: inset 0px 100px 500px rgb(10, 10, 10), inset 0px -80px 500px rgb(10, 10, 10);
+    }
+    .content {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 100px;
+        text-align: center;
+    }
+    #logo {
+        width: 89px;
+    }
+    .rightside {
+        gap: 8px;
+    }
+    .content h1 {
+        font-size: 32px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+    .email-content p {
+        font-size: 18px;
+    }
+    .email>input {
+        width: 339.438px;
+    }
+    .btn {
+        padding: 12px 24px;
+        margin-left: 8px;
+    }
+    .body-section {
+        display: flex;
+        padding: 70px 0PX;
+    }
+    .content1 {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .left {
+        width: 100%;
+    }
+    .left h1  {
+        font-size: 32px;
+        margin-bottom: 15px;
+        text-align: center;
+        left: 0px;
+        bottom: 0px;
+    }
+    .left p{
+        font-size: 18px;
+        text-align: center;
+        left: 0px;
+        bottom: 0px;
+    }
+    .right {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .right img {
+        width: 650px;
+        max-width: 100%;
+    } 
+    .right video {
+        position: absolute;
+        width: 520px;
+        left: 10%;
+        top: 19%;
+    }
+
+    .body-section1 {
+        display: flex;
+        padding: 50px 0PX 20px;
+    }
+    .content2 {
+        position: relative;
+        display: block;
+        align-items: center;
+    }
+    .download {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+        max-width: 100%;
+    }
+    .download h1 {
+        font-size: 32px;
+    }
+    .download p {
+        font-size: 18px;
+    }
+    .strangerthings img {
+        width: 640px;
+        max-width: 100%;
+    }
+    .downloading {
+        width: 380px;
+        height: 80px;
+    }
+    .downloading img {
+        width: 45px;
+        height: 60px;
+    }
+    .strangerthings {
+        padding-top: 70px;
+    }
+
+    .content3 {
+        display: block;
+    }
+    .apple img {
+        width: 640px;
+        max-width: 100%;
+    }
+    .where {
+        text-align: center;
+        max-width: 100%;
+    }
+    .where h1  {
+        font-size: 32px;
+
+    }
+    .where p{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .content4 {
+        display: block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .children {
+        padding-top: 170px;
+        /* padding-left: 50px; */
+    }
+    .children img {
+        width: 640px;
+        max-width: 100%;
+    }
+    .kids {
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        max-width: 100%;
+    }
+    .kids h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .kids p {
+        font-size: 18px;
+    }
+
+    .content5 {
+        padding: 50px 30px 20px;
+    }
+    .content5 h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    .question p {
+        margin: 0px;
+        font-size: 18px;
+    }
+    .question .close-btn {
+        font-size: 22px;
+    }
+    .question {
+        background-color: rgb(45, 45, 45);
+        border-radius: 1px;
+        display: flex;
+        justify-content: space-between;
+        align-self: stretch;
+        padding: 24px;
+        align-items:center;
+        transition-duration: 0.5s;
+    }
+    .question:hover {
+        background-color: rgb(75, 75, 75);
+        transition-duration: 0.5s;
+    }
+    .answer p {
+        font-size: 18px;
+    }
+    .email {
+        width: max-content;
+        display: flex;
+    }
+
+    .content6 {
+        padding: 10px 0px;
+        padding-left: 32px;
+    }
+    .footer-list li {
+        display: inline-block;
+        width: 24%;
+        max-width: 100%;
+        margin-bottom: 11px;
+    }
+    @media screen and (max-width: 600px){
+        .header {
+            background-size: cover;
+            background-position:left;
+            height: 67vh;
+        }
+        .container {
+            box-shadow: inset 0px 50px 300px rgb(10, 10, 10), inset 0px -50px 200px rgb(10, 10, 10);
+        }
+        .nav {
+            margin: 0px 24px;
+        }
+        .select {
+            max-width: 25px;
+            padding: 5px 30px;
+        }
+        
+        .email {
+            display: inline-block;
+            width: 100%;
+            display: block;
+            padding: 0px 50px;
+        }
+        .email>input {
+            flex-grow: 1;
+            margin: 0px;
+            width: 100%;
+        }
+        .email-label {
+            margin-bottom: 61px ;
+            bottom: 15px;
+            left: 67px;
+        }
+        .email-error {
+            top: 52%;
+            left: 72px;
+        }
+        .material-symbols-outlined {
+            top: 63px;
+            left: 50px;
+        }
+         .btn {
+            font-size: 18px;
+            padding: 8px 16px;
+            text-align: center;
+            margin: 16px auto;
+        }
+        .btn span {
+            font-size: 30px;
+        }
+        .content {
+            position: relative;
+            top: 40px;
+        }
+
+        .right {
+            width: 100%;
+        }
+        .left {
+            width: 100%;
+        }
+        .right img {
+            width: 520px;
+            justify-content: center;
+            margin: 0px auto;
+        } 
+        .right video {
+            width: 450px;
+            left: 10%;
+            top: 78px;
+            max-width: 80%;
+        }
+
+        .content2 {
+            width: 100%;
+        }
+        .strange_image > img {
+            margin: 0px auto;
+            width: 520px;
+            max-width: 100%;
+        }
+        .downloading {
+            max-width: 63%;
+            height: 62px;
+            bottom: 92px;
+        }
+        .downloading p {
+            font-size: 14px;
+        }
+        .downloading small {
+            font-size: 12px;
+        }
+        .downloading img {
+            width: 34px;
+            height: 48px;
+        }
+        .strangerthings {
+            padding: 150px 20px 0px;
+        }
+        .download {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            text-align: center;
+            left: -5px;
+        }
+
+        .content3 {
+            display: inline-block;
+            align-items: center;
+            width: 100%;
+        }
+        .apple {
+            display: flex;
+            width: 100%;
+        }
+        .where {
+            width: 100%;
+            padding-left: 0px;   
+        }
+        .where p {
+            padding-right: 10px;
+        }
+        .apple img {
+            width: 500px;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .apple video {
+            width: 500PX;
+            max-width: 65%;
+            right: 18%;
+        }
+        .droparrow, .content6 .dropdown > .droparrow {
+            left: 33px;
+        }
+        .kids {
+            text-align: center;
+        }
+        .kids h1{
+            padding-left: 10px;
+        }
+        .kids p {
+            padding-left: 10px;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .content6 {
+        padding: 10px 25px;
+    }
+    .footer-list li {
+        display: inline-block;
+        width: 45%;
+        max-width: 100%;
+        margin-bottom: 12px;
+    }
+}
